@@ -10,7 +10,7 @@
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600 uppercase tracking-wider">Atelierul Meu</a>
+            <a href="index.html" class="text-4xl font-black text-indigo-600 drop-shadow-[0_2px_2px_rgba(79,70,229,0.3)] hover:drop-shadow-md transition-all duration-300">Atelierul Meu</a>
             <div class="space-x-6">
                 <a href="index.html#produse" class="hover:text-indigo-500 font-medium">Produse</a>
                 <a href="index.html#despre" class="hover:text-indigo-500 font-medium">Despre noi</a>
@@ -28,59 +28,59 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             
             <div class="space-y-4">
-                <div class="overflow-hidden rounded-xl shadow-lg bg-white">
-                    <img src="Fluture.jpg" alt="Imagine Principală" class="w-full h-auto object-cover border-b">
+                <div class="overflow-hidden rounded-xl shadow-lg bg-white h-[450px] flex items-center justify-center">
+                    <img id="mainImage" src="Fluture.jpg" alt="Imagine Principală" class="w-full h-full object-cover transition duration-300">
                 </div>
                 
                 <div class="grid grid-cols-3 gap-4">
-                    <img src="Fluture.jpg" alt="Detaliu 1" class="rounded-lg shadow hover:opacity-75 cursor-pointer transition">
-                    <img src="Fluture.jpg" alt="Detaliu 2" class="rounded-lg shadow hover:opacity-75 cursor-pointer transition">
-                    <img src="Fluture.jpg" alt="Detaliu 3" class="rounded-lg shadow hover:opacity-75 cursor-pointer transition">
+                    <img src="Fluture.jpg" alt="Detaliu 1" onclick="schimbaImaginea(this.src)" class="h-24 w-full object-cover rounded-lg shadow hover:opacity-75 cursor-pointer transition border hover:border-indigo-500">
+                    <img src="Fluture.jpg" alt="Detaliu 2" onclick="schimbaImaginea(this.src)" class="h-24 w-full object-cover rounded-lg shadow hover:opacity-75 cursor-pointer transition border hover:border-indigo-500">
+                    <img src="Fluture.jpg" alt="Detaliu 3" onclick="schimbaImaginea(this.src)" class="h-24 w-full object-cover rounded-lg shadow hover:opacity-75 cursor-pointer transition border hover:border-indigo-500">
                 </div>
             </div>
 
             <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                <span class="text-indigo-600 font-semibold tracking-wider text-sm uppercase">Categorie Produs</span>
-                <h2 class="text-4xl font-bold mt-2 mb-4">Mărțisor Future</h2>
+                <span class="text-indigo-600 font-semibold tracking-wider text-sm uppercase">Mărțișor Creativ</span>
+                <h2 id="numeProdus" class="text-4xl font-bold mt-2 mb-4">Mărțișor fluture</h2>
                 
                 <p class="text-2xl text-gray-900 font-light mb-6">15,00 RON</p>
                 
                 <hr class="mb-6">
 
-                <h4 class="text-lg font-bold mb-2">Descriere </h4>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                    ✨ De ce să alegi acest mărțișor?
-Design Unic: Fiecare model este proiectat de la zero de către mine. Nu vei găsi acest model în magazinele de serie; este o creație proprie, gândită să aducă un zâmbet și un strop de originalitate.
+                <h4 class="text-lg font-bold mb-2">Descriere</h4>
+                <div class="text-gray-600 leading-relaxed mb-6 space-y-4">
+                    <p>✨ <strong>De ce să alegi acest mărțișor?</strong><br>
+Design Unic: Fiecare model este proiectat de la zero de către mine. Nu vei găsi acest model în magazinele de serie; este o creație proprie, gândită să aducă un zâmbet și un strop de originalitate.<br>
 
-Precizie și Detaliu: Tăierea laser permite realizarea unor detalii extrem de fine, imposibil de obținut prin metodele tradiționale de decupare. Marginile sunt perfect finisate, oferind un aspect elegant și modern.
+Precizie și Detaliu: Tăierea laser permite realizarea unor detalii extrem de fine, imposibil de obținut prin metodele tradiționale de decupare. Marginile sunt perfect finisate, oferind un aspect elegant și modern.<br>
 
-Finisaj Manual: Deși laserul oferă forma perfectă, „sufletul” produsului vine din etapa manuală. Fiecare piesă este șlefuită, asamblată și ambalată cu grijă, asigurându-mă că produsul final este impecabil.
+Finisaj Manual: Deși laserul oferă forma perfectă, „sufletul” produsului vine din etapa manuală. Fiecare piesă este șlefuită, asamblată și ambalată cu grijă, asigurându-mă că produsul final este impecabil.<br>
 
-Materiale de Calitate: Folosesc plăci selectate cu grijă (lemn/acrilic) pentru a garanta durabilitatea și un aspect premium. 
-                    <br><br>
-                    📝 Detalii Tehnice:
-Material: [Ex: Lemn natural de mesteacăn ]
+Materiale de Calitate: Folosesc plăci selectate cu grijă (lemn/acrilic) pentru a garanta durabilitatea și un aspect premium. <br>
+                    <p>📝 <strong>Detalii Tehnice:</strong><br>
+  Material:  Lemn natural de mesteacăn <br>
 
-Dimensiuni: 4-5cm
+Dimensiuni: 4-5cm<br>
 
-Sistem de prindere: Prevăzut cu șnur tradițional alb-roșu și ac de siguranță/magnet.
+Sistem de prindere: Prevăzut cu șnur tradițional alb-roșu și ac de siguranță/magnet.<br>
 
-Personalizare: Fiind un produs creat de mine, putem discuta despre adaptări pentru comenzi mai mari (logo-uri sau mesaje specifice).
-
-"Un mărțișor creat cu drag, pentru a fi purtat cu drag."
-                </p>
+Personalizare: Fiind un produs creat de mine, putem discuta despre adaptări pentru comenzi mai mari (logo-uri sau mesaje specifice).<br>
+                    </p>
+                    
+                    <p class="italic text-indigo-600">"Un mărțișor creat cu drag, pentru a fi purtat cu drag."</p>
+                </div>
 
                 <div class="bg-indigo-50 p-4 rounded-lg mb-8">
                     <ul class="text-sm text-indigo-900 space-y-2">
                         <li>✅ Lucrat manual în România</li>
-                        <li>✅ Materiale 100% naturale</li>
-                        <li>✅ Livrare în 2-3 zile lucrătoare</li>
+                        <li>✅ Materiale premium</li>
+                        <li>✅ Livrare rapidă</li>
                     </ul>
                 </div>
 
-                <button class="w-full bg-indigo-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-indigo-700 transition shadow-lg">
-                    Comandă prin WhatsApp / Email
-                </button>
+                <a id="whatsappBtn" href="#" target="_blank" class="w-full bg-green-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition shadow-lg flex justify-center items-center gap-2">
+                    Comandă prin WhatsApp
+                </a>
             </div>
         </div>
     </main>
@@ -89,5 +89,33 @@ Personalizare: Fiind un produs creat de mine, putem discuta despre adaptări pen
         <p>&copy; 2026 Atelierul Meu. Creat cu pasiune.</p>
     </footer>
 
+    <script>
+        // Functia care schimba imaginea principala
+        function schimbaImaginea(sursaNoua) {
+            const imgPrincipala = document.getElementById('mainImage');
+            imgPrincipala.style.opacity = '0.3';
+            
+            setTimeout(() => {
+                imgPrincipala.src = sursaNoua;
+                imgPrincipala.style.opacity = '1';
+            }, 100);
+        }
+
+        // Configurarea link-ului de WhatsApp
+        function configureazaWhatsApp() {
+            const numarTelefon = "40756211135"; 
+            const numeProdus = document.getElementById('numeProdus').innerText;
+            const mesaj = encodeURIComponent("Bună ziua! Doresc să comand produsul: " + numeProdus);
+            
+            const url = "https://wa.me/" + numarTelefon + "?text=" + mesaj;
+            const btn = document.getElementById('whatsappBtn');
+            if(btn) {
+                btn.href = url;
+            }
+        }
+
+        // Rulăm funcția după ce s-a încărcat tot conținutul
+        window.addEventListener('DOMContentLoaded', configureazaWhatsApp);
+    </script>
 </body>
 </html>
